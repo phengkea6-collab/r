@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Electronic - Professional Electronic Components</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <span class="logo-text">Hybrid Electronic</span>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search components, sensors, microcontrollers..." aria-label="Search products">
+            <button class="search-btn" aria-label="Search">
+                <span>🔍</span>
+            </button>
+        </div>
+        
+        <div class="header-actions">
+            <div class="cart-icon" onclick="openCart()" aria-label="Shopping cart">
+                <span>🛒</span>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-container">
+        <a href="#featured-products" class="nav-link active" data-section="featured-products">New Products</a>
+        <a href="#electronic-components" class="nav-link" data-section="electronic-components">Electronic Components</a>
+        <a href="#project-research" class="nav-link" data-section="project-research">Project Research</a>
+        <a href="#services" class="nav-link" data-section="services">Services</a>
+        <a href="#about-us" class="nav-link" data-section="about-us">About Us</a>
+    </div>
+</nav>
+<!-- banner -->
+<section class="hero-banner">
+    <div class="hero-content">
+        <h1>Professional Electronic Components</h1>
+        <p>Fast Delivery • Real Stock • Expert Technical Support</p>
+        <div class="hero-features">
+            <div class="feature">
+                <span class="feature-icon">🚚</span>
+                <span>Fast Shipping</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">✅</span>
+                <span>Genuine Parts</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🛠️</span>
+                <span>Tech Support</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="featured-products" class="products-section">
+    <div class="products-container">
+        <h2 class="section-title">Featured Products</h2>
+        <!-- esp32 -->
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/esp32_4_1_grobo.png" alt="ESP32 DevKit V1" loading="lazy">
+                    <div class="product-badge">Popular</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ESP32 DevKit V1</h3>
+                    <p class="product-description">WiFi + Bluetooth Module</p>
+                    <div class="product-specs">
+                        <span class="spec">Dual Core</span>
+                        <span class="spec">240MHz</span>
+                        <span class="spec">4MB Flash</span>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$5.00</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order ESP32 DevKit V1">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- stm32 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/STM32F103C8T6-STM32-ARM-Core-Development-board-C-Type-Industrial-Grade.jpg" alt="STM32F103C8T6" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div> 
+                <div class="product-info">
+                    <h3 class="product-title">STM32F103C8T6</h3>
+                    <p class="product-description">ARM Cortex-M3 Development Board</p>
+                    <div class="product-specs">
+                        <span class="spec">72MHz</span>
+                        <span class="spec">64KB Flash</span>
+                        <span class="spec">20KB RAM</span>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$2.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- arduino -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/arduino_uno_R3.jpeg" alt="Arduino Uno R3" loading="lazy">
+                    <div class="product-badge new">New</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Arduino Uno R3</h3>
+                    <p class="product-description">ATmega328P Microcontroller</p>
+                    <div class="product-specs">
+                        <span class="spec">16MHz</span>
+                        <span class="spec">32KB Flash</span>
+                        <span class="spec">USB</span>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$4.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order Arduino Uno R3">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- LCD -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/LCD.jpg" alt="LCD1602A" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">LCD1602A</h3>
+                    <p class="product-description">LCD only</p>
+                    <div class="product-specs">
+                        <span class="spec">Blue Display</span>
+                        <span class="spec">64KB Flash</span>
+                        <span class="spec">20KB RAM</span> 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$2.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Stlink -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/stlnk.jpeg" alt="ST-Link V2 STM8/STM32 STM32 ST-Link V2" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ST-Link V2 STM8/STM32 STM32 ST-Link V2</h3>
+                    <p class="product-description">LCD only</p> 
+                    <div class="product-specs">
+                        <span class="spec">Blue Display</span>
+ 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$2.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+<!-- bluetooth module -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="public/18596.jpg" alt="HC 05 or HC 06" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">HC 05 or HC 06</h3>
+                    <p class="product-description">Bluetooth Module Device</p>
+                    <div class="product-specs">
+                        <span class="spec">2.4 Hz</span>
+                        <span class="spec">3.3-6V</span>
+ 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$5.00</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- breadboard -->
+             <div class="product-card">
+                <div class="product-image">
+                    <img src="public/Breadboard.jpeg" alt="Bread Board" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Bread Board</h3>
+                    <p class="product-description">Bluetooth Module Device</p>
+                    <div class="product-specs">
+ 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$1.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- #ultrasonic -->
+             <div class="product-card">
+                <div class="product-image">
+                    <img src="public/ultrasonic.jpeg" alt="Ultrasonic Sensor" loading="lazy">
+                    <!-- <div class="product-badge best-value">Best Value</div> -->
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ulstrasonic Sensor</h3>
+                    <p class="product-description">for measure distance or detect Object</p>
+                    <div class="product-specs">
+ 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$1.25</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+              
+             <div class="product-card">
+                <div class="product-image">
+                    <img src="public/servo.jpeg" alt="Servo SG90" loading="lazy">
+                    <!-- <div class="product-badge best-value">Best Value</div> -->
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Servo SG90</h3>
+                    <p class="product-description">Operate on 4.8-6V, angle ratation 180 degree</p>
+                    <div class="product-specs">
+ 
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$1.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Electronic Components Section -->
+<section id="electronic-components" class="products-section">
+    <div class="products-container">
+        <h2 class="section-title">Electronic Components</h2>
+        
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="product-image">
+                    <img src="public/STM32F103C8T6-STM32-ARM-Core-Development-board-C-Type-Industrial-Grade.jpg" alt="STM32F103C8T6" loading="lazy">
+                    <div class="product-badge best-value">Best Value</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">STM32F103C8T6</h3>
+                    <p class="product-description">ARM Cortex-M3 Development Board</p>
+                    <div class="product-specs">
+                        <span class="spec">72MHz</span>
+                        <span class="spec">64KB Flash</span>
+                        <span class="spec">20KB RAM</span>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-price">$4.50</span>
+                        <button class="order-btn" onclick="order()" aria-label="Order STM32F103C8T6">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">💡</div>
+                <h3>LEDs & Displays</h3>
+                <p>Wide selection of lighting and display solutions</p>
+                <ul>
+                    <li>RGB LEDs</li>
+                    <li>7-Segment Displays</li>
+                    <li>OLED Displays</li>
+                    <li>LCD Modules</li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">🔧</div>
+                <h3>Sensors & Modules</h3>
+                <p>Advanced sensing solutions for IoT and automation</p>
+                <ul>
+                    <li>Temperature Sensors</li>
+                    <li>Motion Detectors</li>
+                    <li>Pressure Sensors</li>
+                    <li>Communication Modules</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- //Project Research Section -->
+<section id="project-research" class="research-section">
+    <div class="research-container">
+        <h2 class="section-title">Project Research & Development</h2>
+        
+        <div class="research-content">
+            <div class="research-intro">
+                <p>Our expert team provides comprehensive research and development services for electronic projects of all scales.</p>
+            </div>
+            
+            <div class="research-services">
+                <div class="service-item">
+                    <div class="service-icon">🔬</div>
+                    <div class="service-details">
+                        <h3>Circuit Design</h3>
+                        <p>Custom PCB design and circuit optimization for your specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">📊</div>
+                    <div class="service-details">
+                        <h3>Prototype Development</h3>
+                        <p>From concept to working prototype with comprehensive testing and validation.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">⚡</div>
+                    <div class="service-details">
+                        <h3>IoT Solutions</h3>
+                        <p>Complete IoT system development including hardware and software integration.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🎓</div>
+                    <div class="service-details">
+                        <h3>Educational Projects</h3>
+                        <p>Support for academic projects and student research initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //Services Section -->
+<section id="services" class="services-section">
+    <div class="services-container">
+        <h2 class="section-title">Our Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                </div>
+                <p>Quick and reliable shipping across Cambodia with same-day delivery in Phnom Penh.</p>
+                <ul>
+                    <li>Same-day delivery in Phnom Penh</li>
+                    <li>2-3 days nationwide</li>
+                    <li>Express shipping available</li>
+                    <li>Free shipping over $50</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                </div>
+                <p>Expert technical assistance from experienced engineers for all your projects.</p>
+                <ul>
+                    <li>Component selection guidance</li>
+                    <li>Circuit troubleshooting</li>
+                    <li>Programming assistance</li>
+                    <li>Project consultation</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">✅</div>
+                    <h3>Quality Assurance</h3>
+                </div>
+                <p>All products are genuine and thoroughly tested before shipping to ensure reliability.</p>
+                <ul>
+                    <li>Genuine components only</li>
+                    <li>Pre-shipping testing</li>
+                    <li>30-day warranty</li>
+                    <li>Return guarantee</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">🎓</div>
+                    <h3>Educational Support</h3>
+                </div>
+                <p>Special programs and discounts for students, schools, and educational institutions.</p>
+                <ul>
+                    <li>Student discounts</li>
+                    <li>Bulk pricing for schools</li>
+                    <li>Educational kits</li>
+                    <li>Workshop support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="about-section">
+    <div class="about-container">
+        <h2 class="section-title">About Hybrid Electronic</h2>
+        
+        <div class="about-content">
+            <div class="about-story">
+                <h3>Our Story</h3>
+                <p>Founded in 2020, Hybrid Electronic Co. Ltd has been at the forefront of providing high-quality electronic components and solutions in Cambodia. We started with a simple mission: to make advanced electronic components accessible to engineers, students, and hobbyists across the country.</p>
+                
+                <p>Today, we serve hundreds of customers ranging from individual makers to large corporations, providing them with genuine components, expert advice, and reliable service.</p>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Products Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+            
+            <div class="about-values">
+                <h3>Our Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <strong>Quality First:</strong> We source only genuine components from trusted manufacturers.
+                    </div>
+                    <div class="value-item">
+                        <strong>Customer Success:</strong> Your project success is our primary goal.
+                    </div>
+                    <div class="value-item">
+                        <strong>Innovation:</strong> We stay updated with the latest technology trends.
+                    </div>
+                    <div class="value-item">
+                        <strong>Reliability:</strong> Consistent service you can depend on.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>Hybrid Electronic Co. Ltd</h3>
+            <p>Professional electronic components supplier in Phnom Penh</p>
+        </div>
+        <div class="footer-contact">
+            <p>📍 Phnom Penh, Cambodia</p>
+            <p>📱 WhatsApp: +855 12 345 678</p>
+            <p>📘 Facebook: Hybrid_electronic co.ltd</p>
+        </div>
+        <div class="footer-links">
+            <a href="#about-us">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 EmbeddedHub | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html> 
+
+
