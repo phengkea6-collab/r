@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "ESP32 DevKit V1",
+    "description": "WiFi + Bluetooth Module",
+    "category": "microcontrollers",
+    "specs": ["Dual Core", "240MHz", "4MB Flash"],
+    "price": 8.99,
+    "badge": "Popular",
+    "badgeClass": "",
+    "image": "images/esp32_4_1_grobo.png",
+    "tags": ["wifi", "bluetooth", "iot", "esp32", "wireless", "dual core"]
+  },
+  {
+    "id": 2,
+    "name": "STM32F103C8T6",
+    "description": "ARM Cortex-M3 Development Board",
+    "category": "microcontrollers",
+    "specs": ["72MHz", "64KB Flash", "20KB RAM"],
+    "price": 2.50,
+    "badge": "Best Value",
+    "badgeClass": "best-value",
+    "image": "images/STM32F103C8T6-STM32-ARM-Core-Development-board-C-Type-Industrial-Grade.jpg",
+    "tags": ["stm32", "arm", "cortex", "development board", "blue pill", "embedded"]
+  },
+  {
+    "id": 3,
+    "name": "Arduino Uno R3",
+    "description": "ATmega328P Microcontroller",
+    "category": "microcontrollers",
+    "specs": ["16MHz", "32KB Flash", "USB"],
+    "price": 12.00,
+    "badge": "New",
+    "badgeClass": "new",
+    "image": "images/arduino_uno_R3.jpeg",
+    "tags": ["arduino", "uno", "atmega", "beginner", "usb", "microcontroller"]
+  },
+  {
+    "id": 4,
+    "name": "LCD1602A",
+    "description": "16x2 Character LCD Display",
+    "category": "displays",
+    "specs": ["Blue Display", "16x2 Chars", "5V"],
+    "price": 2.50,
+    "badge": "Best Value",
+    "badgeClass": "best-value",
+    "image": "images/LCD.jpg",
+    "tags": ["lcd", "display", "screen", "1602", "16x2", "character display"]
+  },
+  {
+    "id": 5,
+    "name": "ST-Link V2",
+    "description": "STM8 / STM32 Programmer & Debugger",
+    "category": "tools",
+    "specs": ["STM8 Support", "STM32 Support", "USB"],
+    "price": 2.50,
+    "badge": "Best Value",
+    "badgeClass": "best-value",
+    "image": "images/stlnk.jpeg",
+    "tags": ["st-link", "stlink", "programmer", "debugger", "stm32", "stm8", "jtag", "swd"]
+  },
+  {
+    "id": 6,
+    "name": "HC-05 / HC-06",
+    "description": "Bluetooth Serial Module",
+    "category": "modules",
+    "specs": ["2.4GHz", "3.3-6V", "UART"],
+    "price": 2.50,
+    "badge": "Best Value",
+    "badgeClass": "best-value",
+    "image": "images/18596.jpg",
+    "tags": ["bluetooth", "hc05", "hc06", "wireless", "serial", "uart", "communication"]
+  },
+  {
+    "id": 7,
+    "name": "Breadboard",
+    "description": "Solderless Prototype Breadboard",
+    "category": "tools",
+    "specs": ["830 Tie Points", "Solderless", "Reusable"],
+    "price": 2.50,
+    "badge": "Best Value",
+    "badgeClass": "best-value",
+    "image": "images/Breadboard.jpeg",
+    "tags": ["breadboard", "prototype", "solderless", "beginner", "wiring", "circuit"]
+  }
+]
